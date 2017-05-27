@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using Mio.Views;
+using Xamarin.Forms;
 
 namespace Mio
 {
@@ -8,7 +9,7 @@ namespace Mio
         {
             InitializeComponent();
 
-            MainPage = new MioPage();
+            MainPage = new NavigationPage(new MainView(null));
         }
 
         protected override void OnStart()
