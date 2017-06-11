@@ -14,6 +14,8 @@ namespace Mio.iOS
         {
             global::Xamarin.Forms.Forms.Init();
 
+            Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
+
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

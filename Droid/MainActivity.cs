@@ -7,6 +7,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Plugin.SecureStorage;
 
 namespace Mio.Droid
 {
@@ -20,9 +21,13 @@ namespace Mio.Droid
 
             base.OnCreate(bundle);
 
+            SecureStorageImplementation.StoragePassword = Build.Id;
             global::Xamarin.Forms.Forms.Init(this, bundle);
+
+            Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
 
             LoadApplication(new App());
         }
+
     }
 }
