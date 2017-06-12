@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Mio.Views.NewItemView">
+	<ContentPage.Content>
+        <StackLayout>
+            <Label Text="Añadir elemento" HorizontalTextAlignment="Center"/>
+            <Picker Title="Categoría" ItemsSource="{Binding CategoryItems}"
+                    ItemDisplayBinding="{Binding nombre}"
+                    SelectedItem="{Binding Path=SelectedCategory, Mode=TwoWay}"/>
+            <Label Text="Título" HorizontalTextAlignment="Center"/>
+            <Entry Text="{Binding Path=Anuncio.nombre, Mode=TwoWay}" />
+            <Label Text="Descripción" HorizontalTextAlignment="Center"/>
+            <Entry Text="{Binding Path=Anuncio.descripcion, Mode=TwoWay}" />
+            <Label Text="Precio" HorizontalTextAlignment="Center"/>
+            <Entry Text="{Binding Path=Anuncio.precio, Mode=TwoWay}" />
+            <Label Text="Imágen" HorizontalTextAlignment="Center"/>
+            <Button Text="Tomar imágen" Command="{Binding TakePhoto}"/>
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>

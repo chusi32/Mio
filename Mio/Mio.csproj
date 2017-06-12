@@ -35,6 +35,9 @@
     <EmbeddedResource Include="Views\ItemListView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\NewItemView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -57,6 +60,14 @@
       <DependentUpon>ItemListView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Services\CameraService.cs" />
+    <Compile Include="Views\NewItemView.xaml.cs">
+      <DependentUpon>NewItemView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\NewItemModel.cs" />
+    <Compile Include="Services\CategoryService.cs" />
+    <Compile Include="Models\Categorias.cs" />
+    <Compile Include="Models\Anuncios.cs" />
+    <Compile Include="Services\ItemService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

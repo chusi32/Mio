@@ -12,7 +12,8 @@ namespace Mio.Services
         private static NavigationService _instance;
         private IDictionary<Type, Type> viewModelRouting = new Dictionary<Type, Type>()
         {
-            {typeof(ItemListModel), typeof(ItemListView)},
+			{typeof(ItemListModel), typeof(ItemListView)},
+			{typeof(NewItemModel), typeof(NewItemView)}
         };
         #endregion
 

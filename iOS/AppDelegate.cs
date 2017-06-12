@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using Plugin.SecureStorage;
 using UIKit;
 
 namespace Mio.iOS
@@ -12,6 +13,7 @@ namespace Mio.iOS
     {
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+
             global::Xamarin.Forms.Forms.Init();
 
             Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();

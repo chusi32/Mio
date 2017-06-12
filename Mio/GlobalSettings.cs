@@ -3,6 +3,12 @@ namespace Mio
 {
     public static class GlobalSettings
     {
-        public const string AzureUrl = "http://xamarintestchusi.azurewebsites.net";
+        #region BBDD Conections
+        public const string AzureUrl = "https://xamarintestchusi.azurewebsites.net";
+        #endregion
+
+        #region Tables
+        public const string CategoriesTable = "Categorias";
+        #endregion
     }
 }

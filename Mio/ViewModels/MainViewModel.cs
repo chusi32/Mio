@@ -26,7 +26,7 @@ namespace Mio.ViewModels
         private async Task Login()
         {
             await AuthService.Instance.LoginAsync();
-            NavigationService.Instance.NavigateTo<ItemListModel>(null);
+            NavigationService.Instance.NavigateTo<ItemListModel>();
         }
         #endregion
     }

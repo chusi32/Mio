@@ -10,8 +10,8 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button Grid.Row="0" Grid.Column="0" Text="Boton"/>
-            <Button Grid.Row="0" Grid.Column="1" Text="Añadir auncio" Command="{Binding AddAd}"/>
+            <Button Grid.Row="0" Grid.Column="0" Text="Boton" Command="{Binding Back}"/>
+            <Button Grid.Row="0" Grid.Column="1" Text="Añadir auncio" Command="{Binding NewItem}"/>
         </Grid>
 	</ContentPage.Content>
 </ContentPage>
